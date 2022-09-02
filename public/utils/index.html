@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../styles.css">
+
+    <!-- Scripts -->
+    <script type="module" src="../utils/app.js" defer></script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/8b9b074ef2.js" crossorigin="anonymous"></script>
+
+    <!-- Font Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-pry-clr-0 font-poppins text-center mt-20">
+    <nav class="bg-pry-clr-3 lg:px-7 md:px-9 px-5 py-3 w-screen fixed top-0 z-[1]">
+        <div class="flex justify-between items-center">
+            <img src="../images/logo-white.png" alt="logo-white" class="w-12">
+            <ul class="hidden text-white md:flex lg:gap-12 md:gap-9 gap-6 tracking-widest nav-links">
+                <li>
+                    <a href="#">Features</a>
+                </li>
+                <li>
+                    <a href="#">Platforms</a>
+                </li>
+                <li>
+                    <a href="#">Pricing</a>
+                </li>
+            </ul>
+            <div class="flex gap-5">
+                <a href="#" class="nav-link login trans">login</a>
+                <a href="#" class="nav-link trans bg-pry-clr-5 hover:bg-pry-clr-2">sign up</a>
+            </div>
+            <button type="button" title="sidebar" class="block hamburger md:hidden focus:outline-none trans">
+                <span class="hamburger-top trans"></span>
+                <span class="hamburger-middle trans"></span>
+                <span class="hamburger-bottom trans"></span>
+            </button>
+        </div>
+    </nav>
+
+    <section id="sidebar" class="fixed top-0 w-[90vw] z-[999] mt-[6rem]">
+        <article
+            class="sidebar-center relative w-[175px] h-[20vh] max-w-[600px] rounded-r-md bg-pry-3 z-[9999] md:hidden trans p-3">
+            <ul class="sidebar-links">
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-gear"></i>
+                        <span>Feature</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-truck-fast"></i>
+                        <span>Platforms</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-money-bill"></i>
+                        <span>Pricing</span>
+                    </a>
+                </li>
+            </ul>
+        </article>
+    </section>
+
+    <header class="mt-28 flex flex-col items-center text-pry-clr-4 px-4">
+        <h1
+            class="lg:text-[95px] font-semibold lg:leading-[95px] tracking-wider mb-5 text-[44px] leading-[44px] md:text-[80px] md:leading-[80px]">
+            Sync your
+            <br><span class="text-pry-clr-5">devices</span>
+            <br>with CtrlV
+        </h1>
+        <p class="lg:text-[28px] mb-5 text-[25px] md:text-[23px]">
+            Share links, texts and files between your devices seamlessly.
+        </p>
+        <button
+            class="px-8 py-2 trans bg-pry-clr-5 rounded-full text-white hover:bg-pry-clr-2 hover:text-pry-clr-5 capitalize tracking-widest mb-3">
+            download
+        </button>
+        <p class="text-sm">
+            It's free, seriously..
+        </p>
+    </header>
+
+    <section id="features" class="my-20 px-3 grid place-items-center">
+        <article class="loading-spin w-[300px] h-[300px] relative grid place-items-center text-[2rem] overflow-hidden">
+            Features
+            <div class="spin-sector spin-sector-1"></div>
+            <div class="spin-sector spin-sector-2"></div>
+            <div class="spin-sector spin-sector-3"></div>
+        </article>
+        <article
+            class="feature grid grid-cols-2 gap-10 mt-10 place-items-center text-pry-clr-4 md:grid-cols-3 lg:grid-cols-4 hidden">
+            <div class="features-item">
+                <div id="features-icon" class="bg-pry-clr-8 text-pry-clr-7">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em"
+                        width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M13.5 1.5L15 0h7.5L24 1.5V9l-1.5 1.5H15L13.5 9V1.5zm1.5 0V9h7.5V1.5H15zM0 15V6l1.5-1.5H9L10.5 6v7.5H18l1.5 1.5v7.5L18 24H1.5L0 22.5V15zm9-1.5V6H1.5v7.5H9zM9 15H1.5v7.5H9V15zm1.5 7.5H18V15h-7.5v7.5z">
+                        </path>
+                    </svg>
+                </div>
+                <h4>
+                    Connect up to 10 devices
+                </h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+            </div>
+            <div class="features-item">
+                <div id="features-icon" class="bg-pry-clr-10 text-pry-clr-9">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em"
+                        width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M8 6.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V11a.5.5 0 0 1-1 0V9.5H6a.5.5 0 0 1 0-1h1.5V7a.5.5 0 0 1 .5-.5z">
+                        </path>
+                        <path
+                            d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h-2z">
+                        </path>
+                    </svg>
+                </div>
+                <h4>
+                    Up to 250MB per file
+                </h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+            </div>
+            <div class="features-item">
+                <div id="features-icon" class="bg-pry-clr-12 text-pry-clr-11">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em"
+                        width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M5 4a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zM5 8a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm0 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1H5z">
+                        </path>
+                        <path
+                            d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z">
+                        </path>
+                    </svg>
+                </div>
+                <h4>
+                    Up to 15,000 words
+                </h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+            </div>
+            <div class="features-item">
+                <div id="features-icon" class="bg-pry-clr-14 text-pry-clr-13">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em"
+                        width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z">
+                        </path>
+                        <path
+                            d="M9.5 6.5a1.5 1.5 0 0 1-1 1.415l.385 1.99a.5.5 0 0 1-.491.595h-.788a.5.5 0 0 1-.49-.595l.384-1.99a1.5 1.5 0 1 1 2-1.415z">
+                        </path>
+                    </svg>
+                </div>
+                <h4>
+                    Secure
+                </h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+            </div>
+            <div class="features-item">
+                <div id="features-icon" class="bg-pry-clr-16 text-pry-clr-15">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em"
+                        width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M888.3 693.2c-42.5-24.6-94.3-18-129.2 12.8l-53-30.7V523.6c0-15.7-8.4-30.3-22-38.1l-136-78.3v-67.1c44.2-15 76-56.8 76-106.1 0-61.9-50.1-112-112-112s-112 50.1-112 112c0 49.3 31.8 91.1 76 106.1v67.1l-136 78.3c-13.6 7.8-22 22.4-22 38.1v151.6l-53 30.7c-34.9-30.8-86.8-37.4-129.2-12.8-53.5 31-71.7 99.4-41 152.9 30.8 53.5 98.9 71.9 152.2 41 42.5-24.6 62.7-73 53.6-118.8l48.7-28.3 140.6 81c6.8 3.9 14.4 5.9 22 5.9s15.2-2 22-5.9L674.5 740l48.7 28.3c-9.1 45.7 11.2 94.2 53.6 118.8 53.3 30.9 121.5 12.6 152.2-41 30.8-53.6 12.6-122-40.7-152.9zm-673 138.4a47.6 47.6 0 0 1-65.2-17.6c-13.2-22.9-5.4-52.3 17.5-65.5a47.6 47.6 0 0 1 65.2 17.6c13.2 22.9 5.4 52.3-17.5 65.5zM522 463.8zM464 234a48.01 48.01 0 0 1 96 0 48.01 48.01 0 0 1-96 0zm170 446.2l-122 70.3-122-70.3V539.8l122-70.3 122 70.3v140.4zm239.9 133.9c-13.2 22.9-42.4 30.8-65.2 17.6-22.8-13.2-30.7-42.6-17.5-65.5s42.4-30.8 65.2-17.6c22.9 13.2 30.7 42.5 17.5 65.5z">
+                        </path>
+                    </svg>
+                </div>
+                <h4>
+                    Cross-platform
+                </h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+            </div>
+            <div class="features-item">
+                <div id="features-icon" class="bg-pry-clr-18 text-pry-clr-17">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em"
+                        width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm5 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm5 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z">
+                        </path>
+                    </svg>
+                </div>
+                <h4>
+                    ...and more
+                </h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+            </div>
+        </article>
+    </section>
+
+    <section class="my-20 overflow-hidden">
+        <h1 class="headings">supported platforms</h1>
+        <article id="platforms"
+            class="grid grid-cols-2 gap-10 mt-10 place-items-center text-pry-clr-4 md:grid-cols-3 lg:grid-cols-4">
+            <!-- Rendered with JS -->
+        </article>
+    </section>
+
+    <section id="pricing" class="grid place-items-center overflow-hidden">
+        <h1 class="headings">pricing</h1>
+        <div class="flex mt-10 gap-5">
+            <h1 class="capitalize text-md font-semibold text-pry-clr-4 tracking-wider">
+                billing cycle
+            </h1>
+            <article class="relative">
+                <button type="button" title="cycle" id="cycleBtn"
+                    class="flex gap-2 items-center px-3 text-xs py-1 hover:text-white bg-pry-clr-2 hover:bg-pry-clr-5 trans rounded-md text-pry-clr-4 w-fit">
+                    <span class="duration capitalize">Monthly</span>
+                    <div>
+                        <i class="fa-solid fa-caret-down"></i>
+                        <i class="fa-solid fa-caret-up hidden"></i>
+                    </div>
+                </button>
+                <div class="drop-down">
+                    <button data-label="monthly" class="cycle-btn">monthly</button>
+                    <button data-label="yearly" class="cycle-btn">yearly</button>
+                    <button data-label="biannual" class="cycle-btn">biannual</button>
+                </div>
+            </article>
+        </div>
+        <article class="grid md:grid-cols-2 gap-[2rem] items-center mt-10 px-2">
+            <div class="cycle-board h-[650px] flex flex-col gap-5 items-start text-pry-clr-4 pt-9 px-9">
+                <h1 class="headings">Free</h1>
+                <h2 class="text-6xl font-semibold">
+                    $0<span class="text-sm trcking-widest">forever</span>
+                </h2>
+                <div class="flex flex-col gap-5 text-start pl-10 my-5">
+                    <p>2 connected devices</p>
+                    <p>25MB per file</p>
+                    <p>Access on all supported platforms</p>
+                    <p>1,000 words</p>
+                    <p>10 links per day</p>
+                    <p>Auto delete after 7 days</p>
+                    <p>Access to all future updates</p>
+                    <p>Download 10 files per minute</p>
+                </div>
+                <button
+                    class="capitalize bg-pry-clr-6 text-pry-clr-4 hover:text-white hover:bg-pry-clr-5 w-full py-2 rounded-lg trans text-[20px]">
+                    download
+                </button>
+            </div>
+            <div class="cycle-board bg-pry-clr-5 h-[700px] pro">
+                <div class="absolute z-[999] flex flex-col gap-2 items-start text-pry-clr-4 pt-9 px-9">
+                    <h1 class="headings">Pro</h1>
+                    <div class="flex">
+                        <h2 class="text-6xl font-semibold price-label">$2.99</h2>
+                        <p class="text-sm trcking-widest price-duration self-end">/monthly</p>
+                    </div>
+                    <div class="free-months text-white px-3 py-1 bg-pry-clr-21 rounded-md hidden"></div>
+                    <div class="flex flex-col gap-5 text-start pl-10 my-5">
+                        <p>Up to 10 connected devices</p>
+                        <p>250MB file</p>
+                        <p>Access on all supported platforms</p>
+                        <p>15,000 words</p>
+                        <p>Unlimited links per day</p>
+                        <p>No auto delete</p>
+                        <p>Access to all future updates</p>
+                        <p>Unlimited file downloads</p>
+                        <p>New beta feature testing</p>
+                    </div>
+                    <button
+                        class="capitalize bg-pry-clr-6 text-white hover:text-white hover:bg-pry-clr-5 w-full py-2 rounded-lg trans text-[20px]">
+                        get pro
+                    </button>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <section class="my-28">
+        <article class="text-white">
+            <span class="fa-brands fa-twitter twitter"></span>
+            <h1 class="text-5xl font-semibold my-7 tracking-wider">Stay in touch</h1>
+            <p>We want to stay connected
+                <br>to our users on Twitter.
+                <br>Follow <a href="https://twitter.com/ctrlVapp" class="underline">@ctrlVapp</a> for all the
+                <br>latest updates.
+            </p>
+        </article>
+    </section>
+
+    <footer class="grid place-items-center">
+        <article id="links"
+            class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 mt-10 py-10 bg-pry-clr-19 text-pry-clr-4 w-full h-full">
+            <div class="platforms-footer">
+                <h1>Platforms</h1>
+                <div class="platforms-footer-center">
+                    <!-- Rendered with JS -->
+                </div>
+            </div>
+            <div class="platforms-footer">
+                <h1>Social</h1>
+                <div>
+                    <ul>
+                        <li>
+                            <a href="#">Twitter</a>
+                        </li>
+                        <li>
+                            <a href="#">Instagram</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="platforms-footer">
+                <h1>Links</h1>
+                <div>
+                    <ul>
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#">Newsletter</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="platforms-footer">
+                <h1>Company</h1>
+                <div>
+                    <ul>
+                        <li>
+                            <a href="#">Terms of service</a>
+                        </li>
+                        <li>
+                            <a href="#">Privacy policy</a>
+                        </li>
+                        <li>
+                            <a href="#">Cookie policy</a>
+                        </li>
+                        <li>
+                            <a href="#">Help center</a>
+                        </li>
+                        <li>
+                            <a href="#">Affiliate</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+        <article id="sub-footer"
+            class="flex flex-col items-center gap-5 pt-5 mt-10 border-t-[1px] w-full h-full bg-pry-clr-20">
+            <img class="w-14" src="../images/logo-white.png" alt="logo-white">
+            <p class="text-pry-clr-4 text-sm">Made with ____ in ____</p>
+        </article>
+    </footer>
+</body>
+
+</html>
